@@ -1,0 +1,10 @@
+{
+  "status": 404,
+  "error": "NOT_FOUND",
+  "message": "Patient with ID 223e4567-e89b-12d3-a456-426614174014 not found",
+  "details": null,
+  "path": "/api/patients/223e4567-e89b-12d3-a456-426614174014",
+  "timestamp": "2025-09-07 17:19:17",
+  "fieldErrors": null,
+  "metadata": null
+}

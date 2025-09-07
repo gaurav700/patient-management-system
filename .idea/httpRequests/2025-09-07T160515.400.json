@@ -1,0 +1,21 @@
+{
+  "status": 400,
+  "error": "VALIDATION_ERROR",
+  "message": "Validation failed for one or more fields",
+  "details": null,
+  "path": "/api/patients",
+  "timestamp": "2025-09-07 16:05:15",
+  "fieldErrors": [
+    {
+      "field": "registeredDate",
+      "message": "Registration date must be in format YYYY-MM-DD",
+      "rejectedValue": "10-01-2024"
+    },
+    {
+      "field": "dateOfBirth",
+      "message": "Date of birth must be in format YYYY-MM-DD",
+      "rejectedValue": "15/03/1985"
+    }
+  ],
+  "metadata": null
+}
