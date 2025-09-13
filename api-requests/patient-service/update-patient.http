@@ -1,10 +1,12 @@
-@host = http://localhost:4000
+@host = http://localhost:8080/api
+@authorization = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjQ1MzM5Yi0zMmY4LTRjOTktYjBjOC0wMDJlMzVhYzhkOTMiLCJlbWFpbCI6ImdhdXJhdkBnbWFpLmNvbSIsImlhdCI6MTc1NzgwNjgzNywiZXhwIjoxNzU3ODA3NDM3fQ.PWL6E_nOR5Ev51cKykuvmfTjvPtNTu9oN6P5u4VBpa0
 
 ### Update patient by ID
 @patientId = 223e4567-e89b-12d3-a456-426614174014
 
 PUT {{host}}/patients/{{patientId}}
 Content-Type: application/json
+Authorization: Bearer {{authorization}}
 
 {
   "name": "Updated John Doe",

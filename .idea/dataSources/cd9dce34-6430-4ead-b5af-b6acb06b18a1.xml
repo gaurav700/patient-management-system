@@ -11,9 +11,9 @@
 4||10|c|G
 4||10|C|G
 4||10|T|G</Grants>
-      <IntrospectionStateNumber>768</IntrospectionStateNumber>
+      <IntrospectionStateNumber>740</IntrospectionStateNumber>
       <ServerVersion>17.6</ServerVersion>
-      <StartupTime>1757285427</StartupTime>
+      <StartupTime>1757794211</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -707,7 +707,7 @@ true posixrules
 13283||10|C|G
 13283||-9223372036854775808|U|G
 13283||10|U|G</Grants>
-      <IntrospectionStateNumber>768</IntrospectionStateNumber>
+      <IntrospectionStateNumber>740</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>admin_user</OwnerName>
     </database>
@@ -4135,96 +4135,14 @@ true posixrules
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>768</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>768</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>768</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>740</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>740</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>740</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2025-09-07.22:51:10</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-09-13.20:10:28</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>532</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <table id="266" parent="265" name="patient">
-      <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16389</ObjectId>
-      <StateNumber>767</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>admin_user</OwnerName>
-    </table>
-    <column id="267" parent="266" name="id">
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>751</StateNumber>
-      <StoredType>uuid|0s</StoredType>
-      <TypeId>2950</TypeId>
-    </column>
-    <column id="268" parent="266" name="name">
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StateNumber>767</StateNumber>
-      <StoredType>varchar(100)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="269" parent="266" name="email">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StateNumber>751</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="270" parent="266" name="address">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StateNumber>751</StateNumber>
-      <StoredType>varchar(255)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="271" parent="266" name="date_of_birth">
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StateNumber>751</StateNumber>
-      <StoredType>date|0s</StoredType>
-      <TypeId>1082</TypeId>
-    </column>
-    <column id="272" parent="266" name="registered_date">
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-      <StateNumber>751</StateNumber>
-      <StoredType>date|0s</StoredType>
-      <TypeId>1082</TypeId>
-    </column>
-    <index id="273" parent="266" name="patient_pkey">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16394</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>767</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <index id="274" parent="266" name="patient_email_key">
-      <ColNames>email</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16396</ObjectId>
-      <StateNumber>767</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationNames>default</CollationNames>
-      <CollationIds>100</CollationIds>
-      <CollationParentNames>pg_catalog</CollationParentNames>
-    </index>
-    <key id="275" parent="266" name="patient_pkey">
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16395</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>751</StateNumber>
-      <UnderlyingIndexId>16394</UnderlyingIndexId>
-    </key>
-    <key id="276" parent="266" name="patient_email_key">
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16397</ObjectId>
-      <StateNumber>751</StateNumber>
-      <UnderlyingIndexId>16396</UnderlyingIndexId>
-    </key>
   </database-model>
 </dataSource>

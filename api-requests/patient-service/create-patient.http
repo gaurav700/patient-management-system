@@ -1,9 +1,10 @@
+@host = http://localhost:8080/api
+@authorization = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjQ1MzM5Yi0zMmY4LTRjOTktYjBjOC0wMDJlMzVhYzhkOTMiLCJlbWFpbCI6ImdhdXJhdkBnbWFpLmNvbSIsImlhdCI6MTc1NzgwNjgzNywiZXhwIjoxNzU3ODA3NDM3fQ.PWL6E_nOR5Ev51cKykuvmfTjvPtNTu9oN6P5u4VBpa0
 
-@host = http://localhost:4000
-
-### Create Patient - Valid Request
+###  Create Patient with All Valid Fields
 POST {{host}}/patients
 Content-Type: application/json
+Authorization: Bearer {{authorization}}
 
 {
   "name": "John Doe",
@@ -11,76 +12,4 @@ Content-Type: application/json
   "address": "123 Main Street, Springfield, IL 62701",
   "dateOfBirth": "1985-03-15",
   "registeredDate": "2024-01-10"
-}
-
-### Create Patient - Another Valid Request
-POST {{host}}/patients
-Content-Type: application/json
-
-{
-  "name": "Jane Smith",
-  "email": "jane.smith@gmail.com",
-  "address": "456 Oak Avenue, Chicago, IL 60601",
-  "dateOfBirth": "1992-07-22",
-  "registeredDate": "2024-02-05"
-}
-
-### Create Patient - Senior Patient
-POST {{host}}/patients
-Content-Type: application/json
-
-{
-  "name": "Robert Johnson",
-  "email": "r.johnson@yahoo.com",
-  "address": "789 Pine Road, Rockford, IL 61101",
-  "dateOfBirth": "1955-11-08",
-  "registeredDate": "2024-03-12"
-}
-
-### Create Patient - Young Adult
-POST {{host}}/patients
-Content-Type: application/json
-
-{
-  "name": "Emily Davis",
-  "email": "emily.davis@outlook.com",
-  "address": "321 Elm Street, Peoria, IL 61602",
-  "dateOfBirth": "1998-09-03",
-  "registeredDate": "2024-01-20"
-}
-
-### Create Patient - Test Validation Errors (Invalid Email)
-POST {{host}}/patients
-Content-Type: application/json
-
-{
-  "name": "Invalid User",
-  "email": "invalid-email",
-  "address": "123 Test Street",
-  "dateOfBirth": "1990-01-01",
-  "registeredDate": "2024-01-01"
-}
-
-### Create Patient - Test Validation Errors (Missing Required Fields)
-POST {{host}}/patients
-Content-Type: application/json
-
-{
-  "name": "",
-  "email": "",
-  "address": "",
-  "dateOfBirth": "",
-  "registeredDate": ""
-}
-
-### Create Patient - Test Validation Errors (Invalid Date Format)
-POST {{host}}/patients
-Content-Type: application/json
-
-{
-  "name": "Test User",
-  "email": "test@email.com",
-  "address": "123 Test Street",
-  "dateOfBirth": "15/03/1985",
-  "registeredDate": "10-01-2024"
 }

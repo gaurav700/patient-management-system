@@ -1,5 +1,7 @@
-@host = http://localhost:4000
+@host = http://localhost:8080/api
+@authorization = eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjQ1MzM5Yi0zMmY4LTRjOTktYjBjOC0wMDJlMzVhYzhkOTMiLCJlbWFpbCI6ImdhdXJhdkBnbWFpLmNvbSIsImlhdCI6MTc1NzgwNjgzNywiZXhwIjoxNzU3ODA3NDM3fQ.PWL6E_nOR5Ev51cKykuvmfTjvPtNTu9oN6P5u4VBpa0
 
 ### Get request to get all patients
 GET {{host}}/patients
+Authorization: Bearer {{authorization}}
 

@@ -1,3 +1,340 @@
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "gaurav@gmail.com",
+  "password": "Gaurav@123"
+}
+
+<> 2025-09-13T195020.404.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "gaurav@gmai.com",
+  "password": "Gaurav@1234"
+}
+
+<> 2025-09-13T195010.400.json
+
+###
+
+POST http://localhost:8080/api/patients
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjQ1MzM5Yi0zMmY4LTRjOTktYjBjOC0wMDJlMzVhYzhkOTMiLCJlbWFpbCI6ImdhdXJhdkBnbWFpLmNvbSIsImlhdCI6MTc1NzgwNjgzNywiZXhwIjoxNzU3ODA3NDM3fQ.PWL6E_nOR5Ev51cKykuvmfTjvPtNTu9oN6P5u4VBpa0
+Content-Length: 177
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "John Doe",
+  "email": "john.doe@email.com",
+  "address": "123 Main Street, Springfield, IL 62701",
+  "dateOfBirth": "1985-03-15",
+  "registeredDate": "2024-01-10"
+}
+
+<> 2025-09-13T194926.201.json
+
+###
+
+POST http://localhost:8080/api/patients
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjQ1MzM5Yi0zMmY4LTRjOTktYjBjOC0wMDJlMzVhYzhkOTMiLCJlbWFpbCI6ImdhdXJhdkBnbWFpLmNvbSIsImlhdCI6MTc1NzgwNjgzNywiZXhwIjoxNzU3ODA3NDM3fQ.PWL6E_nOR5Ev51cKykuvmfTjvPtNTu9oN6P5u4VBpa0
+Content-Length: 136
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "missing.name@email.com",
+  "address": "123 Test Street",
+  "dateOfBirth": "1990-01-01",
+  "registeredDate": "2024-01-01"
+}
+
+<> 2025-09-13T194800.400.json
+
+###
+
+DELETE http://localhost:8080/api/patients/4bb20f64-a848-45b6-9c3a-47a01a4962eb
+authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjQ1MzM5Yi0zMmY4LTRjOTktYjBjOC0wMDJlMzVhYzhkOTMiLCJlbWFpbCI6ImdhdXJhdkBnbWFpLmNvbSIsImlhdCI6MTc1NzgwNjgzNywiZXhwIjoxNzU3ODA3NDM3fQ.PWL6E_nOR5Ev51cKykuvmfTjvPtNTu9oN6P5u4VBpa0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-09-13T194559.404.json
+
+###
+
+PUT http://localhost:8080/api/patients/223e4567-e89b-12d3-a456-426614174014
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjQ1MzM5Yi0zMmY4LTRjOTktYjBjOC0wMDJlMzVhYzhkOTMiLCJlbWFpbCI6ImdhdXJhdkBnbWFpLmNvbSIsImlhdCI6MTc1NzgwNjgzNywiZXhwIjoxNzU3ODA3NDM3fQ.PWL6E_nOR5Ev51cKykuvmfTjvPtNTu9oN6P5u4VBpa0
+Content-Length: 196
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Updated John Doe",
+  "email": "updated.john.doe@email.com",
+  "address": "456 Updated Street, Springfield, IL 62701",
+  "dateOfBirth": "1985-03-15",
+  "registeredDate": "2024-01-10"
+}
+
+<> 2025-09-13T194547.200.json
+
+###
+
+GET http://localhost:8080/api/patients
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjQ1MzM5Yi0zMmY4LTRjOTktYjBjOC0wMDJlMzVhYzhkOTMiLCJlbWFpbCI6ImdhdXJhdkBnbWFpLmNvbSIsImlhdCI6MTc1NzgwNjgzNywiZXhwIjoxNzU3ODA3NDM3fQ.PWL6E_nOR5Ev51cKykuvmfTjvPtNTu9oN6P5u4VBpa0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-09-13T194527.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 60
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "gaurav@gmai.com",
+  "password": "Gaurav@123"
+}
+
+<> 2025-09-13T194037.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "jgaurav@gmai.com",
+  "password": "Gaurav@123"
+}
+
+<> 2025-09-13T194027.404.json
+
+###
+
+POST http://localhost:8080/api/auth/signup
+Content-Type: application/json
+Content-Length: 80
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "gaurav@gmai.com",
+  "password": "Gaurav@123",
+  "name": "Gaurav"
+}
+
+<> 2025-09-13T193921.200.json
+
+###
+
+POST http://localhost:8080/api/auth/signup
+Content-Type: application/json
+Content-Length: 80
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "gaurav@gmai.com",
+  "password": "Gaurav@123",
+  "name": "Gaurav"
+}
+
+<> 2025-09-13T193400.409.json
+
+###
+
+POST http://localhost:8080/api/auth/signup
+Content-Type: application/json
+Content-Length: 80
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "gaurav@gmai.com",
+  "password": "Gaurav@123",
+  "name": "Gaurav"
+}
+
+<> 2025-09-13T192328.500.json
+
+###
+
+POST http://localhost:8080/api/patients
+Content-Type: application/json
+Content-Length: 178
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "John Doe",
+  "email": "john.doe1@email.com",
+  "address": "123 Main Street, Springfield, IL 62701",
+  "dateOfBirth": "1985-03-15",
+  "registeredDate": "2024-01-10"
+}
+
+<> 2025-09-13T170732.201.json
+
+###
+
+GET http://localhost:8080/api/patients
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-09-13T170656.200.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 179
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Jane Smith",
+  "email": "jane.smith111@gmail.com",
+  "address": "456 Oak Avenue, Chicago, IL 60601",
+  "dateOfBirth": "1992-07-22",
+  "registeredDate": "2024-02-05"
+}
+
+<> 2025-09-13T163115.201.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 178
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Jane Smith",
+  "email": "jane.smith11@gmail.com",
+  "address": "456 Oak Avenue, Chicago, IL 60601",
+  "dateOfBirth": "1992-07-22",
+  "registeredDate": "2024-02-05"
+}
+
+<> 2025-09-13T162721.201.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 177
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Jane Smith",
+  "email": "jane.smith1@gmail.com",
+  "address": "456 Oak Avenue, Chicago, IL 60601",
+  "dateOfBirth": "1992-07-22",
+  "registeredDate": "2024-02-05"
+}
+
+<> 2025-09-13T162342.201.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 176
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Jane Smith",
+  "email": "jane.smith@gmail.com",
+  "address": "456 Oak Avenue, Chicago, IL 60601",
+  "dateOfBirth": "1992-07-22",
+  "registeredDate": "2024-02-05"
+}
+
+<> 2025-09-13T162330.409.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 176
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Jane Smith",
+  "email": "jane.smith@gmail.com",
+  "address": "456 Oak Avenue, Chicago, IL 60601",
+  "dateOfBirth": "1992-07-22",
+  "registeredDate": "2024-02-05"
+}
+
+<> 2025-09-13T161658.201.json
+
+###
+
+POST http://localhost:4000/patients
+Content-Type: application/json
+Content-Length: 177
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "John Doe",
+  "email": "john.doe@email.com",
+  "address": "123 Main Street, Springfield, IL 62701",
+  "dateOfBirth": "1985-03-15",
+  "registeredDate": "2024-01-10"
+}
+
+<> 2025-09-13T161435.201.json
+
+###
+
 POST http://localhost:4000/patients
 Content-Type: application/json
 Content-Length: 179
@@ -399,287 +736,6 @@ Accept: */*
 }
 
 <> 2025-09-07T160515.400.json
-
-###
-
-POST http://localhost:4000/api/patients
-Content-Type: application/json
-Content-Length: 93
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "",
-  "email": "",
-  "address": "",
-  "dateOfBirth": "",
-  "registeredDate": ""
-}
-
-<> 2025-09-07T160500.400.json
-
-###
-
-POST http://localhost:4000/api/patients
-Content-Type: application/json
-Content-Length: 153
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Invalid User",
-  "email": "invalid-email",
-  "address": "123 Test Street",
-  "dateOfBirth": "1990-01-01",
-  "registeredDate": "2024-01-01"
-}
-
-<> 2025-09-07T160449.400.json
-
-###
-
-POST http://localhost:4000/api/patients
-Content-Type: application/json
-Content-Length: 176
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Jane Smith",
-  "email": "jane.smith@gmail.com",
-  "address": "456 Oak Avenue, Chicago, IL 60601",
-  "dateOfBirth": "1992-07-22",
-  "registeredDate": "2024-02-05"
-}
-
-<> 2025-09-07T160445.201.json
-
-###
-
-POST http://localhost:4000/api/patients
-Content-Type: application/json
-Content-Length: 177
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "John Doe",
-  "email": "john.doe@email.com",
-  "address": "123 Main Street, Springfield, IL 62701",
-  "dateOfBirth": "1985-03-15",
-  "registeredDate": "2024-01-10"
-}
-
-<> 2025-09-07T160435.201.json
-
-###
-
-GET http://localhost:4000/api/patients
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-09-07T160409.200.json
-
-###
-
-POST http://localhost:4000/api/patients
-Content-Type: application/json
-Content-Length: 153
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Invalid User",
-  "email": "invalid-email",
-  "address": "123 Test Street",
-  "dateOfBirth": "1990-01-01",
-  "registeredDate": "2024-01-01"
-}
-
-<> 2025-09-07T155136.500.json
-
-###
-
-POST http://localhost:4000/api/patients
-Content-Type: application/json
-Content-Length: 179
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Emily Davis",
-  "email": "emily.davis@outlook.com",
-  "address": "321 Elm Street, Peoria, IL 61602",
-  "dateOfBirth": "1998-09-03",
-  "registeredDate": "2024-01-20"
-}
-
-<> 2025-09-07T155132.201.json
-
-###
-
-POST http://localhost:4000/api/patients
-Content-Type: application/json
-Content-Length: 179
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Robert Johnson",
-  "email": "r.johnson@yahoo.com",
-  "address": "789 Pine Road, Rockford, IL 61101",
-  "dateOfBirth": "1955-11-08",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-09-07T155110.500.json
-
-###
-
-POST http://localhost:4000/api/patients
-Content-Type: application/json
-Content-Length: 179
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Robert Johnson",
-  "email": "r.johnson@yahoo.com",
-  "address": "789 Pine Road, Rockford, IL 61101",
-  "dateOfBirth": "1955-11-08",
-  "registeredDate": "2024-03-12"
-}
-
-<> 2025-09-07T155106.201.json
-
-###
-
-POST http://localhost:4000/api/patients
-Content-Type: application/json
-Content-Length: 176
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "Jane Smith",
-  "email": "jane.smith@gmail.com",
-  "address": "456 Oak Avenue, Chicago, IL 60601",
-  "dateOfBirth": "1992-07-22",
-  "registeredDate": "2024-02-05"
-}
-
-<> 2025-09-07T155104.201.json
-
-###
-
-POST http://localhost:4000/api/patients
-Content-Type: application/json
-Content-Length: 177
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "John Doe",
-  "email": "john.doe@email.com",
-  "address": "123 Main Street, Springfield, IL 62701",
-  "dateOfBirth": "1985-03-15",
-  "registeredDate": "2024-01-10"
-}
-
-<> 2025-09-07T155051.201.json
-
-###
-
-GET http://localhost:4000/api/patients
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-09-07T155047.200.json
-
-###
-
-GET http://localhost:4000/api/patients
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-09-07T155021.404.json
-
-###
-
-GET http://localhost:4000/api/patients
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-09-07T155018.404.json
-
-###
-
-POST http://localhost:4000/api/patients
-Content-Type: application/json
-Content-Length: 177
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "John Doe",
-  "email": "john.doe@email.com",
-  "address": "123 Main Street, Springfield, IL 62701",
-  "dateOfBirth": "1985-03-15",
-  "registeredDate": "2024-01-10"
-}
-
-<> 2025-09-07T154918.404.json
-
-###
-
-GET http://localhost:4000/patients
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-09-07T153255.200.json
-
-###
-
-GET https://examples.http-client.intellij.net/get?generated-in=IntelliJ IDEA
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-09-07T153223.200.json
-
-###
-
-GET http://localhost:4000/patients
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-09-07T153159.200.json
-
-###
-
-GET http://localhost:4000/patients
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2025-09-07T152924.200.json
 
 ###
 
