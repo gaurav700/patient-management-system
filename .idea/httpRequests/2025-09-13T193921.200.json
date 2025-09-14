@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "status": 200,
+  "message": "Record created successfully",
+  "data": {
+    "id": "1645339b-32f8-4c99-b0c8-002e35ac8d93",
+    "name": "Gaurav",
+    "email": "gaurav@gmai.com"
+  },
+  "path": "/auth/signup",
+  "timestamp": "2025-09-13 23:39:20"
+}

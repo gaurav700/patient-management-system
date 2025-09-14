@@ -1,0 +1,10 @@
+{
+  "status": 404,
+  "error": "NOT_FOUND",
+  "message": "User with this email id: jgaurav@gmai.com not exists",
+  "details": null,
+  "path": "/auth/login",
+  "timestamp": "2025-09-13 23:40:26",
+  "fieldErrors": null,
+  "metadata": null
+}

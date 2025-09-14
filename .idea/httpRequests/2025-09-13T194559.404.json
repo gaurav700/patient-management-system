@@ -1,0 +1,10 @@
+{
+  "status": 404,
+  "error": "NOT_FOUND",
+  "message": "Patient with ID 4bb20f64-a848-45b6-9c3a-47a01a4962eb not found",
+  "details": null,
+  "path": "/patients/4bb20f64-a848-45b6-9c3a-47a01a4962eb",
+  "timestamp": "2025-09-13 23:46:00",
+  "fieldErrors": null,
+  "metadata": null
+}

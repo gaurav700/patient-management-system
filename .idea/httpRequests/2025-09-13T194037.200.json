@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "status": 200,
+  "message": "Record created successfully",
+  "data": {
+    "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjQ1MzM5Yi0zMmY4LTRjOTktYjBjOC0wMDJlMzVhYzhkOTMiLCJlbWFpbCI6ImdhdXJhdkBnbWFpLmNvbSIsImlhdCI6MTc1NzgwNjgzNywiZXhwIjoxNzU3ODA3NDM3fQ.PWL6E_nOR5Ev51cKykuvmfTjvPtNTu9oN6P5u4VBpa0",
+    "refreshToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNjQ1MzM5Yi0zMmY4LTRjOTktYjBjOC0wMDJlMzVhYzhkOTMiLCJpYXQiOjE3NTc4MDY4MzgsImV4cCI6MTc3MzM1ODgzOH0._wL8RYabgq0TnnxdOew_Ds357YugKu2QwmQP3P8meSM"
+  },
+  "path": "/auth/login",
+  "timestamp": "2025-09-13 23:40:38"
+}

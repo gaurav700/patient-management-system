@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "status": 201,
+  "message": "Record created successfully",
+  "data": {
+    "id": "b12dc1c2-0cf1-40cf-af96-b499d09274fc",
+    "name": "Jane Smith",
+    "email": "jane.smith11@gmail.com",
+    "address": "456 Oak Avenue, Chicago, IL 60601",
+    "dateOfBirth": "1992-07-22"
+  },
+  "path": "/patients",
+  "timestamp": "2025-09-13 20:27:21"
+}

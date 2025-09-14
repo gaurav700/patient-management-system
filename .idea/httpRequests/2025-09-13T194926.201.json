@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "status": 201,
+  "message": "Record created successfully",
+  "data": {
+    "id": "5c683c33-e28a-4b5b-a77f-f6969ca0fa40",
+    "name": "John Doe",
+    "email": "john.doe@email.com",
+    "address": "123 Main Street, Springfield, IL 62701",
+    "dateOfBirth": "1985-03-15"
+  },
+  "path": "/patients",
+  "timestamp": "2025-09-13 23:49:26"
+}

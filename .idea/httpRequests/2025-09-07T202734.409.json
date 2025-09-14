@@ -1,0 +1,10 @@
+{
+  "status": 409,
+  "error": "CONFLICT",
+  "message": "Patient with this email id already exists : john.doe@email.com",
+  "details": null,
+  "path": "/patients",
+  "timestamp": "2025-09-08 00:27:33",
+  "fieldErrors": null,
+  "metadata": null
+}

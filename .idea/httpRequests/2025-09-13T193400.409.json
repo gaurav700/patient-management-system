@@ -1,0 +1,10 @@
+{
+  "status": 409,
+  "error": "CONFLICT",
+  "message": "Data integrity violation",
+  "details": "Please check for duplicate values in unique fields",
+  "path": "/auth/signup",
+  "timestamp": "2025-09-13 23:34:00",
+  "fieldErrors": null,
+  "metadata": null
+}
